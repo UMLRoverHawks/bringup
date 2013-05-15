@@ -1,0 +1,14 @@
+<package>
+  <description brief="bringup">
+
+     bringup
+
+  </description>
+  <author>csrobot</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/bringup</url>
+
+</package>
+
+
