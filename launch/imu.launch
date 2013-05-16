@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find imu_um6)/launch/imu.launch" >
+        <arg name="port" default="/dev/IMU" />
+    </include>
+</launch>
