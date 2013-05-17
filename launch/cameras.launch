@@ -1,0 +1,6 @@
+<launch>
+    <arg name="republishtheora" default="true" />
+    <include file="$(find uvc_camera)/launch/cameras.launch" >
+        <arg name="republishtheora" default="$(arg republishtheora)" />
+    </include>
+</launch>
