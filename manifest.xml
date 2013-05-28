@@ -13,6 +13,9 @@
   <depend package="republish_theora" />
   <depend package="mdc2250" />
   <depend package="imu_um6" />
+  <depend package="rover_cam_detect" />
+  <depend package="sample_acquisition" />
+  <depend package="rover_cam_mux" />
   <!-- ADD OTHER VISION STUFF HERE! -->
 </package>
 
