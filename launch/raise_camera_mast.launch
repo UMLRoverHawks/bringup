@@ -1,0 +1,3 @@
+<launch>
+  <node name="raise_camera_mast" type="raise_camera_mast.py" pkg="raise_camera_mast" output="screen" />
+</launch>
