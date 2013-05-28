@@ -3,6 +3,4 @@
   <node name="republish1" type="republish" pkg="image_transport" output="screen" args="theora in:=camera1_stream/image_raw compressed out:=camera1_stream/republished/image_raw" />
   <node name="republish2" type="republish" pkg="image_transport" output="screen" args="theora in:=camera2_stream/image_raw compressed out:=camera2_stream/republished/image_raw" />
   <node name="republish3" type="republish" pkg="image_transport" output="screen" args="theora in:=camera3_stream/image_raw compressed out:=camera3_stream/republished/image_raw" />
-  <include file="$(find rover_cam_mux)/launch/mux.launch" >
-  </include>
 </launch>

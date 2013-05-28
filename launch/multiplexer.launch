@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find rover_cam_mux)/launch/mux.launch" >
+  </include>
+</launch>

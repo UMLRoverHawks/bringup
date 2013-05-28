@@ -1,0 +1,11 @@
+#!/bin/bash
+
+roslaunch bringup/launch/backend.launch
+roslaunch bringup/launch/cameras.launch
+while [ -z `rostopic info /camera3_stream/image_raw/theora | grep republish3` ]; do
+sleep 1
+echo HELLO
+done
+roslaunch bringup/launch/multiplexer.launch
+
+
