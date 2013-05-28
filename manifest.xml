@@ -16,6 +16,7 @@
   <depend package="rover_cam_detect" />
   <depend package="sample_acquisition" />
   <depend package="rover_cam_mux" />
+  <depend package="mast" />
   <!-- ADD OTHER VISION STUFF HERE! -->
 </package>
 
