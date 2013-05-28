@@ -7,4 +7,13 @@
 
     <!-- IMU -->
     <include file="$(find bringup)/launch/imu.launch" />
+
+    <!-- CAMERAS -->
+    <include file="$(find bringup)/launch/cameras.launch" />
+
+    <!-- MAST -->
+    <include file="$(find bringup)/launch/raise_camera_mast.launch" />
+
+    <!-- ARM -->
+    <include file="$(find sample_acquisition)/launch/sample_acquisition.launch" />
 </launch>
