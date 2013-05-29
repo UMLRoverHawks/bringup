@@ -2,14 +2,8 @@
     <!-- Motor controllers -->
     <include file="$(find mdc2250)/launch/quad.launch" />
 
-    <!-- Camera Mast Servo -->
-    <include file="$(find bringup)/launch/raise_camera_mast.launch" />
-
     <!-- IMU -->
     <include file="$(find bringup)/launch/imu.launch" />
-
-    <!-- CAMERAS -->
-    <include file="$(find bringup)/launch/cameras.launch" />
 
     <!-- MAST -->
     <include file="$(find bringup)/launch/raise_camera_mast.launch" />

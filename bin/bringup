@@ -1,11 +1,12 @@
 #!/bin/bash
 
-roslaunch bringup/launch/backend.launch
-roslaunch bringup/launch/cameras.launch
+roslaunch bringup backend.launch &
+roslaunch bringup cameras.launch &
 while [ -z `rostopic info /camera3_stream/image_raw/theora | grep republish3` ]; do
 sleep 1
 echo HELLO
 done
-roslaunch bringup/launch/multiplexer.launch
+roslaunch bringup multiplexer.launch
+killall -2 roslaunch
 
 
