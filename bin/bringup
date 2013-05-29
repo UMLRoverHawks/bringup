@@ -6,7 +6,8 @@ while [ -z `rostopic info /camera3_stream/image_raw/theora | grep republish3` ];
 sleep 1
 echo HELLO
 done
-roslaunch bringup multiplexer.launch
+roslaunch bringup multiplexer.launch &
+roslaunch bringup detectors.launch
 killall -2 roslaunch
 
 
