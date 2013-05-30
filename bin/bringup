@@ -7,7 +7,7 @@ sleep 1
 echo HELLO
 done
 roslaunch bringup multiplexer.launch &
-roslaunch bringup detectors.launch
+roslaunch rover_cam_detect detectors.launch
 killall -2 roslaunch
 
 
