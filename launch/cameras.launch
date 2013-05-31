@@ -1,4 +1,4 @@
 <launch>
     <include file="$(find uvc_camera)/launch/cameras.launch" />
-    <include file="$(find bringup)/launch/republish.launch" />
+<!--    <include file="$(find bringup)/launch/republish.launch" /> -->
 </launch>
