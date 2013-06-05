@@ -1,0 +1,7 @@
+#!/bin/bash
+roslaunch mdc2250 quad.launch &
+roslaunch sample_acquisition sample_acqusition.launch &
+roslaunch mdc2250 joystick.launch linear:=2.0 angular:=2.0
+killall -2 roslaunch
+
+
