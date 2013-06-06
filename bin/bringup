@@ -1,14 +1,10 @@
 #!/bin/bash
 
 roslaunch bringup backend.launch &
-#roslaunch bringup cameras.launch &
-roslaunch bringup cameras_fake_image_detect.launch &
+roslaunch bringup cameras.launch &
 while [ -z `rostopic info /camera1_stream/image_raw/theora | grep republish` ]; do
 sleep 1
 echo HELLO
 done
-roslaunch bringup multiplexer.launch #&
-#roslaunch rover_cam_detect detectors.launch
+roslaunch bringup multiplexer.launch
 killall -2 roslaunch
-
-
