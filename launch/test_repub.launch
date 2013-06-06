@@ -1,0 +1,3 @@
+<launch>
+  <node name="republish1" type="republish" pkg="image_transport" output="screen" args="theora in:=camera1/image_raw raw out:=camera1_stream/republished/image_raw" />
+</launch>
