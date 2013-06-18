@@ -1,7 +1,12 @@
 #!/bin/bash
+killall -9 rosmaster
+export ROS_MASTER_URI=http://127.0.0.1:11311
+export ROS_HOSTNAME=127.0.0.1
+roscore &
+while ! pgrep -f rosmaster; do sleep 1; done
 roslaunch mdc2250 quad.launch &
 roslaunch sample_acquisition sample_acquisition.launch &
-roslaunch mdc2250 joystick.launch linear:=2.0 angular:=2.0
+roslaunch mdc2250 joystick.launch linear:=2.0 angular:=1.0
 killall -2 roslaunch
 
 
