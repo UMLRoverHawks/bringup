@@ -1,5 +1,5 @@
 #!/bin/bash
-
+roslaunch bringup republish.launch &
 roslaunch bringup backend.launch &
 roslaunch bringup cameras.launch &
 while [ -z `rostopic info /camera1_stream/image_raw/theora | grep republish` ]; do
