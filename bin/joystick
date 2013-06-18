@@ -6,7 +6,7 @@ roscore &
 while ! pgrep -f rosmaster; do sleep 1; done
 roslaunch mdc2250 quad.launch &
 roslaunch sample_acquisition sample_acquisition.launch &
-roslaunch mdc2250 joystick.launch linear:=2.0 angular:=1.0
+roslaunch mdc2250 joystick.launch $*
 killall -2 roslaunch
 
 
