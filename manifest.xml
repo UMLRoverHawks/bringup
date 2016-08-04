@@ -8,15 +8,8 @@
   <license>BSD</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/bringup</url>
-  <depend package="gps" />
-  <depend package="uvc_camera" />
-  <depend package="republish_theora" />
   <depend package="mdc2250" />
-  <depend package="imu_um6" />
-  <depend package="rover_cam_detect" />
   <depend package="sample_acquisition" />
-  <depend package="rover_cam_mux" />
-  <depend package="raise_camera_mast" />
   <!-- ADD OTHER VISION STUFF HERE! -->
 </package>
 
